@@ -10,14 +10,19 @@
         <!-- Fonts -->
 
         <!-- Styles -->
-        
-        </style>
-    </head>
-    <body>
-	@include('inc.navbar')
-	<div class="container">
-	
-        @yield('content')
-	</div>
-    </body>
+
+    </style>
+</head>
+<body>
+    @include('inc.navbar')
+    <div class="container">
+	@include('inc.messages')
+
+	@yield('content')
+    </div>
+    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script>
+	CKEDITOR.replace('article-ckeditor');
+    </script>
+</body>
 </html>
