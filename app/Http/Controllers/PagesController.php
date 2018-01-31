@@ -4,20 +4,29 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PagesController extends Controller
-{
-public function index()
+class PagesController extends Controller {
+
+    public function index()
     {
-return view('pages.index');
+	$title = "Welcome to Puu's world";
+//	return view('pages.index', compact('title'));
+	return view('pages.index')->with('title', $title);
+//	what we want to call var inside the view, var (esp for array)
     }
-    
+
     public function about()
     {
-return view('pages.about');
+	$title = 'About us';
+	return view('pages.about', compact('title'));
     }
-    
+
     public function services()
     {
-return view('pages.services');
+	$data = array(
+	    'title'=>'Services',
+	    'services'=> ['Web Design','SEO',"Programming"]
+	);
+	return view('pages.services')->with($data);
     }
+
 }
