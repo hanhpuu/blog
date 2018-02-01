@@ -15,7 +15,7 @@
             <file>file:/C:/xampp/htdocs/blog/resources/views/posts/show.blade.php</file>
             <file>file:/C:/xampp/htdocs/blog/app/Http/Controllers/PostsController.php</file>
             <file>file:/C:/xampp/htdocs/blog/resources/views/layouts/app.blade.php</file>
-            <file>file:/C:/xampp/htdocs/blog/resources/views/inc/messages.blade.php</file>
+            <file>file:/C:/xampp/htdocs/blog/resources/views/inc/navbar.blade.php</file>
             <file>file:/C:/xampp/htdocs/blog/resources/views/posts/create.blade.php</file>
         </group>
     </open-files>
